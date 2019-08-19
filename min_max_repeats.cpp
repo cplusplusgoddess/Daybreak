@@ -33,7 +33,7 @@ static void show_usage(std::string name)
               << std::endl;
 }
 
-int getLowestNonuniqueOccurances( vector<int> intList )
+int getLowestNonuniqueOccurences( vector<int> intList )
 {
 	// Initialize our counts, etc
 	int lowDups = 0;
@@ -62,7 +62,7 @@ int getLowestNonuniqueOccurances( vector<int> intList )
 	return lowDups;
 }
 
-int getHighestNonuniqueOccurances( vector<int> intList )
+int getHighestNonuniqueOccurences( vector<int> intList )
 {
 	// Initialize our counts, etc
 	int hiDups = 0;
@@ -134,10 +134,10 @@ int main(int argc, char *argv[])
 			for_each( currList.begin() , currList.end(), print_elem ) ;
 	    	std::cout << endl;
             sort(currList.begin(), currList.end());
-			lowDups = getLowestNonuniqueOccurances( currList );
-			hiDups = getHighestNonuniqueOccurances( currList );
-			std::cout << "Lowest Duplicated Occurances: " << lowDups << "\t" ;
-			std::cout << "Highest Duplicated Occurances: " << hiDups << "\t" ;
+			lowDups = getLowestNonuniqueOccurences( currList );
+			hiDups = getHighestNonuniqueOccurences( currList );
+			std::cout << "Lowest Duplicated Occurences: " << lowDups << "\t" ;
+			std::cout << "Highest Duplicated Occurences: " << hiDups << "\t" ;
 			std::cout << endl;
 
 		}
